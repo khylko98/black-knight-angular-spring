@@ -1,0 +1,25 @@
+.background-container::after {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+.background {
+  position: fixed;
+  display: grid;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  z-index: -2;
+}
+
+.background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

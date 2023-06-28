@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Gabriela&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Gabriela";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
