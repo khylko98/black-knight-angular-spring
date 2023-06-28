@@ -1,0 +1,35 @@
+services:
+  db:
+    container_name: black-knight-db
+    image: postgres:15
+    environment:
+      POSTGRES_DB: player
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "5332:5432"
+    networks:
+      - db
+    restart: unless-stopped
+  api:
+    container_name: black-knight-api
+    build: ./api
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/player
+    ports:
+      - "8088:8080"
+    networks:
+      - db
+    depends_on:
+      - db
+    restart: unless-stopped
+
+networks:
+  db:
+    driver: bridge
+
+volumes:
+  db:

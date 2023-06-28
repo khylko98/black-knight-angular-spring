@@ -1,0 +1,22 @@
+{
+  "mainText": [
+    "They continued eating and talking, discussing various aspects of the journey ahead and sharing stories from their past. Despite the weight of their task, they felt a sense of camaraderie and adventure that lifted their spirits and gave them hope for the road ahead.",
+    "As Austin and the wizard walked into wagon, Semero and Arvanka turned their attention towards them. Wizard moved with surprising speed despite his large belly, and he stood in front of Semero, bowing as best he could. He then introduced himself as Nobody from Nowhere. Semero couldn't help but raise his eyebrows at such a strange name.",
+    "Arvanka noticed Semero's surprise and chuckled. \"Don't mind his name, he's one of the best wizards around,\" she said.",
+    "Wizard chuckled softly and straightened up, his robes billowing around him. \"Indeed, my name may be peculiar, but my skills are not to be underestimated,\" he said with a small smile.",
+    "Semero couldn't help but feel impressed by wizard's confidence. He had never met a wizard before, let alone one with such a peculiar name. He was curious to know more about Nobody from Nowhere and his abilities, but he didn't want to seem too eager. Instead, he simply nodded in acknowledgment and thanked him for his help in getting them back on track.",
+    "Wizard began, \"So, Austin told me how he got you out of the clutches of the fog monsters. However, he said that he did not know the purpose of your journey.\"",
+    "At this point, Arvanka chimed in, \"He said he was going to kill dragon.\" In wagon fell silent for a moment before both Austin and the wizard burst into laughter, looking at each other incredulously. Semero frowned resentfully, feeling embarrassed and unsure of what was so funny.",
+    "After a few moments, wizard finally managed to regain his composure enough to speak. \"Forgive me, but it's just that everyone who tries to slay dragon always ends up either failing or becoming dragon fodder. I'm afraid it's not as easy as it sounds.\" Austin nodded in agreement, still grinning from ear to ear.",
+    "Semero's face fell at their laughter and he crossed his arms, feeling a bit foolish. \"I have to do it,\" he insisted. \"It's my duty to save my people.\"",
+    "Austin turned to Semero with a strange squint in his eyes and asked, \"Your people?\" Semero was taken aback by the question but quickly regained his composure and replied, \"I am a prince. King Ardan sent me to kill the dragon.\"",
+    "Austin's expression changes to one of surprise and then understanding. He nods slowly and says, \"I see. Well, that changes things.\" Wizard, Nobody from Nowhere, speaks up and says, \"Killing a dragon is no easy task, even for a prince.\" Semero nods in agreement, feeling a little overwhelmed by the weight of his mission.",
+    "Arvanka chimes in, \"But we can help him, right?\" She smiles reassuringly at Semero. Semero is grateful for their offer of help, but he can't help feeling a little apprehensive about the whole thing.",
+    "\"Wait a minute, girl! I don't really want to fight dragons. Especially the ones that burn entire villages in one flight,\" said Austin.",
+    "Arvanka gives Austin an annoyed look but doesn't say anything. ",
+    "Austin continues, \"I mean, I don't want to end up like those poor villagers. I value my life, you know.\" ",
+    "Wizard strokes his long white beard and nods slowly. \"Indeed, dragon can be quite dangerous creature. But if our young hero really wants to meet one, then we can certainly help him get there safely.\""
+  ],
+  "talkOption": ["Semero nods eagerly, \"Yes, please. I must fulfill my duty to my kingdom and slay the dragon.\""],
+  "talkOptionResult": ["Wizard smiles and says, \"Then it is settled. We shall head east towards the mountain range.\""]
+}

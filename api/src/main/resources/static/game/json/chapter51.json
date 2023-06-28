@@ -1,0 +1,24 @@
+{
+  "mainText": [
+    "Journey through the winding road was long and sometimes arduous, but Semero found himself enjoying company of wizard. As they traveled, wizard regaled him with tales of legendary heroes and their exploits. Semero was fascinated by the stories, and he listened with rapt attention.",
+    "Austin, on the other hand, remained quiet for most of journey. When he did speak, it was usually to discuss the road ahead with wizard. Semero tried to engage him in conversation, but he found it difficult to get much out of taciturn ranger.",
+    "Despite this, Semero found himself drawn to Arvanka. He sought her out whenever he could, but she often eluded him, disappearing into one of many rooms of magical wagon. Semero was intrigued by her mysterious nature, and he wondered what secrets she might be hiding.",
+    "Party continued their journey until they finally reached the bridge over the widest river on the continent. On the west bank, they saw several hundred tents scattered around, and many people were moving around in a frenzied manner. Wizard pulled wagon to a stop on a hill from where they could see whole valley below.",
+    "As Austin and Semero got out of wagon, they noticed that people below were refugees from the east. Sight of the refugees only added to his anxiety.",
+    "Wizard broke silence and said, \"We need to cross river and head towards east.\" ",
+    "Austin nodded in agreement, but Semero was still lost in his thoughts.",
+    "As they descend hill towards the riverbank, they see that refugees are huddled together in small groups, some with small fires burning to keep warm. They look tired, hungry, and scared. Semero's heart aches for them, and he wonders how many villages this dragon has destroyed to cause such a mass exodus.",
+    "As our group descended into the refugee camp, they were met by several people who looked at them with curiosity and suspicion. Semero saw that many of them were gaunt and worn out from their long journey, their clothes ragged and dirty. Smell of smoke and sweat hung heavy in the air.",
+    "An old man with a long white beard stepped forward, leaning on a gnarled stick. He eyed them warily and asked, \"Who will you be?\"",
+    "Austin stepped forward and replied in a clear voice, \"My name is Austin. My companions and I are going east.\" Semero watched as the refugees looked surprised at Austin's words. Only old man remained unperturbed, his face lined with wrinkles and wisdom.",
+    "Old man said after a few seconds: \"There are border guards on the bridge. They won't let you in. There is no way with those who are now on guard. Night watchmen will let you through if you agree with them with a bag of hard coins.\" ",
+    "Austin chuckled.",
+    "At this time, some boy from the refugees asked: \"But who will pay for the opportunity to go to the east, into the thick of it?!\"",
+    "Semero were silent.",
+    "Old man said: \"You and your friends can sit with us by the fire for a while, and by night you will try to drive.\"",
+    "Austin rubbed his bristly chin thoughtfully. And then he nodded to old man.",
+    "Semero, Austin, and wizard followed old man to a small fire that was burning in the center of camp. They sat down on the ground around the fire, and some of refugees brought them food and water. Old man introduced himself as Niran."
+  ],
+  "talkOption": ["Semero asked the old man, \"Where are you from?\""],
+  "talkOptionResult": ["Niran answered him, \"Far from east. My village stood at the mountain range. Behind this range the dragon lived for centuries and did not fly to us. But now it has flown.\"", "Semero asked, \"Did you see him?\"", "Niran replied, \"Yes.\""]
+}
