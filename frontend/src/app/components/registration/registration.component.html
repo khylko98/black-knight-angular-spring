@@ -17,7 +17,7 @@
       <button
         pButton
         pRipple
-        label="Registration"
+        label="Login"
         class="p-button-raised p-button-text p-button-warning"
         style="
           margin: 15px;
@@ -27,7 +27,7 @@
           color: beige;
           background-color: rgb(255, 240, 0, 0.15);
         "
-        (click)="registration()"
+        (click)="login()"
       ></button>
     </div>
     <div
@@ -52,7 +52,7 @@
           id="username"
           type="text"
           required
-          [(ngModel)]="this.authReq.username"
+          [(ngModel)]="this.playerRegistrationReq.username"
         />
         <label for="username">Username</label>
       </span>
@@ -79,7 +79,7 @@
           id="password"
           type="password"
           required
-          [(ngModel)]="this.authReq.password"
+          [(ngModel)]="this.playerRegistrationReq.password"
         />
         <label for="password">Password</label>
       </span>
@@ -88,7 +88,7 @@
       <button
         pButton
         pRipple
-        label="Login"
+        label="Registration"
         class="p-button-raised p-button-text p-button-success"
         style="
           margin: 20px;
@@ -99,7 +99,7 @@
           color: beige;
           background-color: rgba(102, 255, 0, 0.15);
         "
-        (click)="login()"
+        (click)="registration()"
       ></button>
     </div>
   </div>

@@ -12,7 +12,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 })
 export class LoginComponent {
   authReq: AuthReq = {};
-  errorMessage = 'Error Message';
+  errorMessage = '';
 
   constructor(
     private messageService: MessageService,
@@ -44,6 +44,6 @@ export class LoginComponent {
   }
 
   registration() {
-    this.router.navigate(['/']);
+    this.router.navigate(['registration']);
   }
 }

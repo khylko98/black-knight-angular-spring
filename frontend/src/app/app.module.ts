@@ -12,9 +12,14 @@ import { LoginComponent } from './components/login/login.component';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { RegistrationComponent } from './components/registration/registration.component';
+import { StartComponent } from './components/start/start.component';
+import { ImageModule } from 'primeng/image';
+import { Card, CardModule } from 'primeng/card';
+import { PrologueComponent } from './components/prologue/prologue.component';
 
 @NgModule({
-  declarations: [AppComponent, BackgroundComponent, LoginComponent],
+  declarations: [AppComponent, BackgroundComponent, LoginComponent, RegistrationComponent, StartComponent, PrologueComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,7 +29,9 @@ import { InputTextModule } from 'primeng/inputtext';
     ToastModule,
     ButtonModule,
     PasswordModule,
-    InputTextModule
+    InputTextModule,
+    ImageModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
