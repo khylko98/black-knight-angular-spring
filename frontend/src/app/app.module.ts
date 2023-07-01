@@ -20,9 +20,18 @@ import { PrologueComponent } from './components/prologue/prologue.component';
 import { HttpInterceptorService } from './services/interceptor/http-interceptor.service';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { FirstChapterComponent } from './components/first-chapter/first-chapter.component';
+import { SecondChapterComponent } from './components/second-chapter/second-chapter.component';
+import { ThirdChapterComponent } from './components/third-chapter/third-chapter.component';
+import { FourthChapterComponent } from './components/fourth-chapter/fourth-chapter.component';
+import { FifthChapterComponent } from './components/fifth-chapter/fifth-chapter.component';
+import { SixthChapterComponent } from './components/sixth-chapter/sixth-chapter.component';
+import { SeventhChapterComponent } from './components/seventh-chapter/seventh-chapter.component';
+import { EighthChapterComponent } from './components/eighth-chapter/eighth-chapter.component';
+import { NinthChapterComponent } from './components/ninth-chapter/ninth-chapter.component';
+import { EpilogueComponent } from './components/epilogue/epilogue.component';
 
 @NgModule({
-  declarations: [AppComponent, BackgroundComponent, LoginComponent, RegistrationComponent, StartComponent, PrologueComponent, FirstChapterComponent],
+  declarations: [AppComponent, BackgroundComponent, LoginComponent, RegistrationComponent, StartComponent, PrologueComponent, FirstChapterComponent, SecondChapterComponent, ThirdChapterComponent, FourthChapterComponent, FifthChapterComponent, SixthChapterComponent, SeventhChapterComponent, EighthChapterComponent, NinthChapterComponent, EpilogueComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

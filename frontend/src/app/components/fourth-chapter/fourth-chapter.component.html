@@ -1,0 +1,32 @@
+<div class="game-container">
+  <h2 class="title">Fourth Chapter</h2>
+  <div *ngFor="let data of chapterData">
+    <div *ngFor="let parag of data.mainText">
+      <p>{{ parag }}</p>
+    </div>
+    <ng-container *ngIf="data.talkOptionVisible">
+      <div>
+        <button class="option-button" (click)="talkOption()">
+          <img src="assets/talk.png" class="option-button-img" /><span
+            class="option-button-text"
+            >{{ data.talkOption }}</span
+          >
+        </button>
+      </div>
+    </ng-container>
+    <div *ngIf="data.talkOptionResultVisible">
+      <div *ngFor="let parag of data.talkOptionResult">
+        <p>{{ parag }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="card flex justify-content-center gap-2">
+    <button
+      *ngIf="toNextChapterCheck"
+      class="next-chapter-button"
+      (click)="toNextChapter()"
+    >
+      <span class="next-chapter-button-text">To next chapter...</span>
+    </button>
+  </div>
+</div>

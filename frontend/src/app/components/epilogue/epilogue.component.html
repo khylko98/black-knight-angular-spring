@@ -1,0 +1,13 @@
+<div class="game-container">
+  <h2 class="title">Epilogue</h2>
+  <div *ngFor="let data of epilogueData">
+    <div *ngFor="let parag of data.mainText">
+      <p>{{ parag }}</p>
+    </div>
+  </div>
+  <div class="card flex justify-content-center gap-2">
+    <button class="next-chapter-button" (click)="toNextChapter()">
+      <span class="next-chapter-button-text">To start...</span>
+    </button>
+  </div>
+</div>

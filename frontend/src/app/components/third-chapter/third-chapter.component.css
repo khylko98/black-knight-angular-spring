@@ -1,0 +1,82 @@
+.game-container {
+  margin: auto 17%;
+  position: absolute;
+  background: linear-gradient(
+    transparent 0%,
+    currentColor 10%,
+    currentColor 95%,
+    transparent 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  color: white;
+}
+
+p {
+  max-width: 1000px;
+  margin: 20px 0;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-size: 24px;
+  font-weight: 700;
+  color: transparent;
+}
+
+.title {
+  max-width: 1000px;
+  margin: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+}
+
+.next-chapter-button {
+  margin: 20px auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: white;
+}
+
+.next-chapter-button:hover {
+  opacity: 1;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 1);
+}
+
+.next-chapter-button-text {
+  display: inline-block;
+  font-size: 40px;
+}
+
+.option-button {
+  margin: 20px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: white;
+}
+
+.option-button:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px white);
+}
+
+.option-button-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.option-button-text {
+  display: inline-block;
+  text-align: left;
+  white-space: initial;
+  font-size: 24px;
+}
