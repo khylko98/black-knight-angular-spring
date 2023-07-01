@@ -4,4 +4,8 @@ export interface GameRes {
   swordOptionResult?: string;
   talkOption?: string;
   talkOptionResult?: string;
+  swordOptionVisible?: boolean;
+  swordOptionResultVisible?: boolean;
+  talkOptionVisible?: boolean;
+  talkOptionResultVisible?: boolean;
 }

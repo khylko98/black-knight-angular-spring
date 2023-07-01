@@ -17,8 +17,12 @@ export class GameService {
     num: string | undefined,
     part: string | undefined
   ): Observable<GameRes> {
-    return this.http.get<GameRes>(
-      `${this.gameUrl}?name=${name}&num=${num}&part=${part}`
-    );
+    if (num === undefined && part === undefined) {
+      return this.http.get<GameRes>(`${this.gameUrl}?name=${name}`);
+    } else {
+      return this.http.get<GameRes>(
+        `${this.gameUrl}?name=${name}&num=${num}&part=${part}`
+      );
+    }
   }
 }

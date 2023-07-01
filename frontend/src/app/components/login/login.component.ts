@@ -25,7 +25,7 @@ export class LoginComponent {
     this.authService.login(this.authReq).subscribe({
       next: (authResponse) => {
         localStorage.setItem('token', authResponse.token);
-        this.router.navigate(['game']);
+        this.router.navigate(['start']);
       },
       error: (err) => {
         if (err.error.message == undefined) {

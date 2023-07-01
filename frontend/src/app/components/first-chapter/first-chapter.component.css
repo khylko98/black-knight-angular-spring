@@ -52,3 +52,31 @@ p {
   display: inline-block;
   font-size: 40px;
 }
+
+.option-button {
+  margin: 20px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: white;
+}
+
+.option-button:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px white);
+}
+
+.option-button-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.option-button-text {
+  display: inline-block;
+  text-align: left;
+  white-space: initial;
+  font-size: 24px;
+}

@@ -1,1 +1,13 @@
-<p>prologue works!</p>
+<div class="game-container">
+  <h2 class="title">Prologue</h2>
+  <div *ngFor="let data of prologueData">
+    <div *ngFor="let parag of data.mainText">
+      <p>{{ parag }}</p>
+    </div>
+  </div>
+  <div class="card flex justify-content-center gap-2">
+    <button class="next-chapter-button" (click)="toNextChapter()">
+      <span class="next-chapter-button-text">To next chapter...</span>
+    </button>
+  </div>
+</div>

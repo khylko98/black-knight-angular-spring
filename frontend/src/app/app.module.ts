@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
 import { AppComponent } from './app.component';
@@ -17,9 +17,12 @@ import { StartComponent } from './components/start/start.component';
 import { ImageModule } from 'primeng/image';
 import { Card, CardModule } from 'primeng/card';
 import { PrologueComponent } from './components/prologue/prologue.component';
+import { HttpInterceptorService } from './services/interceptor/http-interceptor.service';
+import { ConfirmationService, MessageService } from 'primeng/api';
+import { FirstChapterComponent } from './components/first-chapter/first-chapter.component';
 
 @NgModule({
-  declarations: [AppComponent, BackgroundComponent, LoginComponent, RegistrationComponent, StartComponent, PrologueComponent],
+  declarations: [AppComponent, BackgroundComponent, LoginComponent, RegistrationComponent, StartComponent, PrologueComponent, FirstChapterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -33,7 +36,15 @@ import { PrologueComponent } from './components/prologue/prologue.component';
     ImageModule,
     CardModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpInterceptorService,
+      multi: true
+    },
+    MessageService,
+    ConfirmationService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
