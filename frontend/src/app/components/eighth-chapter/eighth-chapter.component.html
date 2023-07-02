@@ -1,4 +1,14 @@
-<div class="game-container">
+<div class="card flex justify-content-center gap-2">
+  <p-toast position="top-center" key="tc"></p-toast>
+</div>
+<div
+  *ngIf="isLoading"
+  class="card flex justify-content-center align-items-center"
+  style="height: 100vh"
+>
+  <p-progressSpinner></p-progressSpinner>
+</div>
+<div *ngIf="!isLoading" class="game-container">
   <h2 class="title">Eighth Chapter</h2>
   <div *ngFor="let data of chapterData">
     <div *ngFor="let parag of data.mainText">

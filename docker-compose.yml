@@ -1,3 +1,5 @@
+version: '3'
+
 services:
   db:
     container_name: black-knight-db
@@ -14,6 +16,7 @@ services:
     networks:
       - db
     restart: unless-stopped
+
   api:
     container_name: black-knight-api
     build: ./api
@@ -26,6 +29,7 @@ services:
     depends_on:
       - db
     restart: unless-stopped
+
   frontend:
     container_name: black-knight-frontend
     build: ./frontend

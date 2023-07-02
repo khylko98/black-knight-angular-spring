@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class EpilogueComponent implements OnInit {
   epilogueData: Array<GameRes> = [];
   errorMessage = '';
+  isLoading = true;
 
   constructor(
     private gameService: GameService,
@@ -29,6 +30,7 @@ export class EpilogueComponent implements OnInit {
     this.gameService.findChapter('epilogue', undefined, undefined).subscribe({
       next: (data) => {
         this.epilogueData.push(data);
+        this.isLoading = false;
       },
       error: (err) => {
         if (err.error.message == undefined) {

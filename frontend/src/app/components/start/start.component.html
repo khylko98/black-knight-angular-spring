@@ -3,7 +3,7 @@
     src="assets/poster.png"
     alt="Poster"
     [imageStyle]="{
-      height: '60vh',
+      height: '65vh',
       margin: '15px',
       'margin-top': '25px',
       'box-shadow': '7px 7px 3px rgb(0, 0, 0, .6)',
@@ -11,54 +11,25 @@
     }"
   ></p-image>
 </div>
-<div class="card flex justify-content-center">
-  <p-card
-    [style]="{
-      width: '50vw',
-      color: 'white',
-      'background-color': 'rgba(40, 40, 40, .5)',
-      'box-shadow': '0 3px 30px black',
-      'border-radius': '3%'
-    }"
+<div class="card flex flex-wrap gap-3 justify-content-center">
+  <p
+    class="m-0"
+    style="max-width: 50vw; color: white; text-align: center; font-size: 20px"
   >
-    <p
-      class="m-0"
-      style="
-        color: white;
-        text-align: center;
-        font-size: 18px;
-      "
-    >
-      This is the fantasy text browser game created by Mykyta
-      <p-image
-        src="assets/signature.png"
-        alt="Poster"
-        [imageStyle]="{
+    This is the fantasy text browser game created by Mykyta
+    <p-image
+      src="assets/signature.png"
+      alt="Poster"
+      [imageStyle]="{
           height: '3vh',
         }"
-      ></p-image>
-      Khylko by using ChatGPT on 2023. The story of this game is about a few
-      characters and their path through a big kingdom to destroy a giant dragon.
-      In this game, the player can choose options for actions and select options
-      in dialogs.
-    </p>
-    <div class="card flex flex-wrap gap-3 justify-content-center">
-      <button
-        pButton
-        pRipple
-        label="Start game"
-        class="p-button-rounded p-button-text p-button-success"
-        style="
-          margin: 20px;
-          margin-bottom: -20px;
-          padding-left: 60px;
-          padding-right: 60px;
-          font-size: 25px;
-          color: beige;
-          background-color: rgba(162, 255, 0, 0.7);
-        "
-        (click)="start()"
-      ></button>
-    </div>
-  </p-card>
+    ></p-image>
+    Khylko by using ChatGPT on 2023. The story of this game is about a few
+    characters and their path through a big kingdom to destroy a giant dragon.
+    In this game, the player can choose options for actions and select options
+    in dialogs.
+  </p>
+</div>
+<div class="card flex flex-wrap gap-3 justify-content-center">
+  <button class="start-button" (click)="start()">START GAME</button>
 </div>

@@ -16,6 +16,7 @@ export class NinthChapterComponent implements OnInit {
   num = 9;
   part = 1;
   readonly maxParts = 1;
+  isLoading = true;
 
   constructor(
     private gameService: GameService,
@@ -38,6 +39,7 @@ export class NinthChapterComponent implements OnInit {
           data.swordOptionResultVisible = false;
           data.talkOptionResultVisible = false;
           this.chapterData.push(data);
+          this.isLoading = false;
         },
         error: (err) => {
           if (err.error.message == undefined) {
@@ -61,7 +63,9 @@ export class NinthChapterComponent implements OnInit {
     this.chapterData[this.chapterData.length - 1].talkOptionVisible = false;
     this.chapterData[this.chapterData.length - 1].swordOptionResultVisible =
       true;
-    this.fetchData();
+    if (this.part <= this.maxParts) {
+      this.fetchData();
+    }
   }
 
   talkOption() {
@@ -70,7 +74,9 @@ export class NinthChapterComponent implements OnInit {
     this.chapterData[this.chapterData.length - 1].talkOptionVisible = false;
     this.chapterData[this.chapterData.length - 1].talkOptionResultVisible =
       true;
-    this.fetchData();
+    if (this.part <= this.maxParts) {
+      this.fetchData();
+    }
   }
 
   public get toNextChapterCheck(): boolean {

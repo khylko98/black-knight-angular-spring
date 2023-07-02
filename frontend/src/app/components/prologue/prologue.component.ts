@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class PrologueComponent implements OnInit {
   prologueData: Array<GameRes> = [];
   errorMessage = '';
+  isLoading = true;
 
   constructor(
     private gameService: GameService,
@@ -29,6 +30,7 @@ export class PrologueComponent implements OnInit {
     this.gameService.findChapter('prologue', undefined, undefined).subscribe({
       next: (data) => {
         this.prologueData.push(data);
+        this.isLoading = false;
       },
       error: (err) => {
         if (err.error.message == undefined) {

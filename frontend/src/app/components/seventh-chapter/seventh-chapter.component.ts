@@ -16,6 +16,7 @@ export class SeventhChapterComponent implements OnInit {
   num = 7;
   part = 1;
   readonly maxParts = 10;
+  isLoading = true;
 
   constructor(
     private gameService: GameService,
@@ -36,6 +37,7 @@ export class SeventhChapterComponent implements OnInit {
           data.talkOptionVisible = true;
           data.talkOptionResultVisible = false;
           this.chapterData.push(data);
+          this.isLoading = false;
         },
         error: (err) => {
           if (err.error.message == undefined) {
@@ -58,7 +60,9 @@ export class SeventhChapterComponent implements OnInit {
     this.chapterData[this.chapterData.length - 1].talkOptionVisible = false;
     this.chapterData[this.chapterData.length - 1].talkOptionResultVisible =
       true;
-    this.fetchData();
+    if (this.part <= this.maxParts) {
+      this.fetchData();
+    }
   }
 
   public get toNextChapterCheck(): boolean {

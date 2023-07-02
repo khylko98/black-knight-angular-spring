@@ -29,6 +29,7 @@ import { SeventhChapterComponent } from './components/seventh-chapter/seventh-ch
 import { EighthChapterComponent } from './components/eighth-chapter/eighth-chapter.component';
 import { NinthChapterComponent } from './components/ninth-chapter/ninth-chapter.component';
 import { EpilogueComponent } from './components/epilogue/epilogue.component';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [AppComponent, BackgroundComponent, LoginComponent, RegistrationComponent, StartComponent, PrologueComponent, FirstChapterComponent, SecondChapterComponent, ThirdChapterComponent, FourthChapterComponent, FifthChapterComponent, SixthChapterComponent, SeventhChapterComponent, EighthChapterComponent, NinthChapterComponent, EpilogueComponent],
@@ -43,7 +44,8 @@ import { EpilogueComponent } from './components/epilogue/epilogue.component';
     PasswordModule,
     InputTextModule,
     ImageModule,
-    CardModule
+    CardModule,
+    ProgressSpinnerModule
   ],
   providers: [
     {
