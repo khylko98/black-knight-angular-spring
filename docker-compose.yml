@@ -26,6 +26,14 @@ services:
     depends_on:
       - db
     restart: unless-stopped
+  frontend:
+    container_name: black-knight-frontend
+    build: ./frontend
+    ports:
+      - 80:80
+    depends_on:
+      - api
+    restart: unless-stopped
 
 networks:
   db:
