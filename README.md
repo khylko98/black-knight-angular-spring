@@ -34,7 +34,15 @@ git clone https://github.com/khylko98/black-knight-angular-spring.git
 
 <br />
 
-**2. Run app using docker**
+**2.1 Packaging api (from dir /api)**
+
+```bash
+mvn package
+```
+
+<br />
+
+**2.2 Run app using docker**
 
 ```bash
 docker compose up
